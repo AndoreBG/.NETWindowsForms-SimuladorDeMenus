@@ -61,12 +61,42 @@ namespace simuladorDeMenus.Properties {
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] cat_breakdancing {
+        internal static System.Drawing.Bitmap everynyan {
             get {
-                object obj = ResourceManager.GetObject("cat_breakdancing", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("everynyan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giornokujo {
+            get {
+                object obj = ResourceManager.GetObject("giornokujo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap osaka {
+            get {
+                object obj = ResourceManager.GetObject("osaka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quieres {
+            get {
+                object obj = ResourceManager.GetObject("quieres", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -76,6 +106,16 @@ namespace simuladorDeMenus.Properties {
         internal static System.IO.UnmanagedMemoryStream sus {
             get {
                 return ResourceManager.GetStream("sus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toro2 {
+            get {
+                object obj = ResourceManager.GetObject("toro2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

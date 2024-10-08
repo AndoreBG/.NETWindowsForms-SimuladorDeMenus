@@ -118,10 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cat_breakdancing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat-breakdancing.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="everynyan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\everynyan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giornokujo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giornokujo.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osaka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osaka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quieres" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quieres.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sus.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toro2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toro2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
