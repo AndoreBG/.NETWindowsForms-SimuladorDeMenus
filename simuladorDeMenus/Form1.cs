@@ -12,9 +12,24 @@ namespace simuladorDeMenus
 {
     public partial class Form1 : Form
     {
+        public static class variavelGlobal
+        {
+            public static string nome;
+        }
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            variavelGlobal.nome = txtNome.Text;
+
+            Iniciou iniciou = new Iniciou();
+            iniciou.Show();
+
+            this.Hide();
         }
     }
 }
