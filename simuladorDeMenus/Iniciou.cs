@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using static simuladorDeMenus.Form1;
 
 namespace simuladorDeMenus
@@ -47,6 +49,13 @@ namespace simuladorDeMenus
                     MessageBoxButtons.OK
                 );
             }
+        }
+
+        private void btnAcao_Click(object sender, EventArgs e)
+        {
+            SoundPlayer sus = new SoundPlayer();
+            sus.Stream = Properties.Resources.sus;
+            sus.Play();
         }
     }
 }
