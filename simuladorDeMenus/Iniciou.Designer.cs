@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Iniciou));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnAcao = new System.Windows.Forms.Button();
+            this.btnVideo = new System.Windows.Forms.Button();
+            this.wmpVideo = new AxWMPLib.AxWindowsMediaPlayer();
+            ((System.ComponentModel.ISupportInitialize)(this.wmpVideo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -61,20 +65,44 @@
             this.btnAcao.Name = "btnAcao";
             this.btnAcao.Size = new System.Drawing.Size(200, 50);
             this.btnAcao.TabIndex = 2;
-            this.btnAcao.Text = "Ação";
+            this.btnAcao.Text = "sus";
             this.btnAcao.UseVisualStyleBackColor = true;
             this.btnAcao.Click += new System.EventHandler(this.btnAcao_Click);
+            // 
+            // btnVideo
+            // 
+            this.btnVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVideo.Location = new System.Drawing.Point(35, 210);
+            this.btnVideo.Name = "btnVideo";
+            this.btnVideo.Size = new System.Drawing.Size(200, 50);
+            this.btnVideo.TabIndex = 3;
+            this.btnVideo.Text = "video.mp4";
+            this.btnVideo.UseVisualStyleBackColor = true;
+            this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click);
+            // 
+            // wmpVideo
+            // 
+            this.wmpVideo.Enabled = true;
+            this.wmpVideo.Location = new System.Drawing.Point(337, 92);
+            this.wmpVideo.Name = "wmpVideo";
+            this.wmpVideo.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpVideo.OcxState")));
+            this.wmpVideo.Size = new System.Drawing.Size(416, 305);
+            this.wmpVideo.TabIndex = 4;
+            this.wmpVideo.Visible = false;
             // 
             // Iniciou
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.wmpVideo);
+            this.Controls.Add(this.btnVideo);
             this.Controls.Add(this.btnAcao);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblTitulo);
             this.Name = "Iniciou";
             this.Text = "Bem Vindo(a)";
+            ((System.ComponentModel.ISupportInitialize)(this.wmpVideo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,5 +113,7 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnAcao;
+        private System.Windows.Forms.Button btnVideo;
+        private AxWMPLib.AxWindowsMediaPlayer wmpVideo;
     }
 }

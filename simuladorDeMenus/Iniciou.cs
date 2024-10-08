@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Reflection;
+using AxWMPLib;
 using static simuladorDeMenus.Form1;
 
 namespace simuladorDeMenus
@@ -56,6 +58,22 @@ namespace simuladorDeMenus
             SoundPlayer sus = new SoundPlayer();
             sus.Stream = Properties.Resources.sus;
             sus.Play();
+        }
+
+        private void btnVideo_Click(object sender, EventArgs e)
+        {
+            string caminhoTemporario = Path.Combine(Path.GetTempPath(), "cat-breakdancing.mp4");
+
+            if (File.Exists(caminhoTemporario))
+            {
+                File.Delete(caminhoTemporario);
+            }
+
+            File.WriteAllBytes(caminhoTemporario, Properties.Resources.cat_breakdancing); 
+
+            wmpVideo.URL = caminhoTemporario;
+
+            wmpVideo.Ctlcontrols.play();
         }
     }
 }
