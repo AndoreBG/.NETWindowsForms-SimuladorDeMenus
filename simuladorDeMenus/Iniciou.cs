@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using System.Reflection;
 using static simuladorDeMenus.Form1;
 
 namespace simuladorDeMenus
@@ -42,26 +41,23 @@ namespace simuladorDeMenus
 
                 this.Close();
             }
-            else if (confirmacao == DialogResult.No)
-            {
-                MessageBox.Show(
-                    "Retorno cancelado!",
-                    "Confirmação",
-                    MessageBoxButtons.OK
-                );
-            }
         }
 
         private void btnAcao_Click(object sender, EventArgs e)
         {
-            SoundPlayer sus = new SoundPlayer();
-            sus.Stream = Properties.Resources.sus;
+            SoundPlayer sus = new SoundPlayer
+            {
+                Stream = Properties.Resources.sus
+            };
             sus.Play();
         }
 
-        private void Iniciou_Load(object sender, EventArgs e)
+        private void btnRelatorio_Click(object sender, EventArgs e)
         {
+            Relatorio relatorio = new Relatorio();
+            relatorio.Show();
 
+            this.Hide();
         }
     }
 }

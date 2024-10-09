@@ -34,8 +34,8 @@
             this.listCor = new System.Windows.Forms.ListBox();
             this.listImage = new System.Windows.Forms.ListBox();
             this.lblImagem = new System.Windows.Forms.Label();
-            this.picBox = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.picBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +73,7 @@
             // 
             // listCor
             // 
+            this.listCor.BackColor = System.Drawing.SystemColors.Control;
             this.listCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listCor.FormattingEnabled = true;
             this.listCor.ItemHeight = 20;
@@ -92,6 +93,7 @@
             // 
             // listImage
             // 
+            this.listImage.BackColor = System.Drawing.SystemColors.Control;
             this.listImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listImage.FormattingEnabled = true;
             this.listImage.ItemHeight = 20;
@@ -103,7 +105,7 @@
             "toro2"});
             this.listImage.Location = new System.Drawing.Point(274, 120);
             this.listImage.Name = "listImage";
-            this.listImage.Size = new System.Drawing.Size(178, 64);
+            this.listImage.Size = new System.Drawing.Size(185, 104);
             this.listImage.TabIndex = 5;
             this.listImage.SelectedIndexChanged += new System.EventHandler(this.listImage_SelectedIndexChanged);
             // 
@@ -113,20 +115,9 @@
             this.lblImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImagem.Location = new System.Drawing.Point(274, 97);
             this.lblImagem.Name = "lblImagem";
-            this.lblImagem.Size = new System.Drawing.Size(179, 20);
+            this.lblImagem.Size = new System.Drawing.Size(185, 20);
             this.lblImagem.TabIndex = 4;
-            this.lblImagem.Text = "Alterar a imagem abaixo";
-            // 
-            // picBox
-            // 
-            this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picBox.Image = global::simuladorDeMenus.Properties.Resources.everynyan;
-            this.picBox.Location = new System.Drawing.Point(279, 211);
-            this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(170, 167);
-            this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBox.TabIndex = 8;
-            this.picBox.TabStop = false;
+            this.lblImagem.Text = "Alterar a imagem ao lado";
             // 
             // btnMenu
             // 
@@ -139,10 +130,23 @@
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
+            // picBox
+            // 
+            this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picBox.Image = global::simuladorDeMenus.Properties.Resources.everynyan;
+            this.picBox.Location = new System.Drawing.Point(501, 120);
+            this.picBox.Name = "picBox";
+            this.picBox.Size = new System.Drawing.Size(265, 259);
+            this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox.TabIndex = 8;
+            this.picBox.TabStop = false;
+            // 
             // Config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.picBox);

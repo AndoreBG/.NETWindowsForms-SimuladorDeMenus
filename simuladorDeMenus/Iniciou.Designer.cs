@@ -31,11 +31,13 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnAcao = new System.Windows.Forms.Button();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.White;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(25, 23);
             this.lblTitulo.Name = "lblTitulo";
@@ -57,7 +59,7 @@
             // btnAcao
             // 
             this.btnAcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcao.Location = new System.Drawing.Point(35, 143);
+            this.btnAcao.Location = new System.Drawing.Point(35, 222);
             this.btnAcao.Name = "btnAcao";
             this.btnAcao.Size = new System.Drawing.Size(200, 50);
             this.btnAcao.TabIndex = 2;
@@ -65,17 +67,30 @@
             this.btnAcao.UseVisualStyleBackColor = true;
             this.btnAcao.Click += new System.EventHandler(this.btnAcao_Click);
             // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.Location = new System.Drawing.Point(35, 166);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(200, 50);
+            this.btnRelatorio.TabIndex = 3;
+            this.btnRelatorio.Text = "Relatório";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            // 
             // Iniciou
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.btnAcao);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblTitulo);
             this.Name = "Iniciou";
             this.Text = "Bem Vindo(a)";
-            this.Load += new System.EventHandler(this.Iniciou_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,5 +101,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnAcao;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }

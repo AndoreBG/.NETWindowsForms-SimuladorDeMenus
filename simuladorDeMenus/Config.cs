@@ -20,10 +20,20 @@ namespace simuladorDeMenus
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Form1 inicio = new Form1(); 
-            inicio.Show();
+            DialogResult confirmacao = MessageBox.Show(
+                "Você realmente deseja voltar ao Menu Inicial?",
+                "Confirmação",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
-            this.Close();
+            if (confirmacao == DialogResult.Yes)
+            {
+                Form1 inicio = new Form1();
+                inicio.Show();
+
+                this.Close();
+            }
         }
 
         private void listCor_SelectedIndexChanged(object sender, EventArgs e)

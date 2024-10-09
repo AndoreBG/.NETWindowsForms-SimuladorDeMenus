@@ -39,7 +39,7 @@
             // btnIniciar
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(54, 206);
+            this.btnIniciar.Location = new System.Drawing.Point(54, 188);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(200, 50);
             this.btnIniciar.TabIndex = 0;
@@ -50,7 +50,7 @@
             // btnConfig
             // 
             this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfig.Location = new System.Drawing.Point(54, 270);
+            this.btnConfig.Location = new System.Drawing.Point(54, 244);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(200, 50);
             this.btnConfig.TabIndex = 1;
@@ -61,6 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(22, 19);
             this.label1.Name = "label1";
@@ -71,7 +72,7 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(54, 335);
+            this.btnSair.Location = new System.Drawing.Point(54, 300);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(200, 50);
             this.btnSair.TabIndex = 3;
@@ -90,6 +91,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.Color.White;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(50, 101);
             this.lblNome.Name = "lblNome";
@@ -101,6 +103,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtNome);
