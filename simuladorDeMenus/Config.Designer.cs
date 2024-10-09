@@ -34,12 +34,9 @@
             this.listCor = new System.Windows.Forms.ListBox();
             this.listImage = new System.Windows.Forms.ListBox();
             this.lblImagem = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBox = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -57,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(581, 428);
+            this.label1.Location = new System.Drawing.Point(580, 428);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 13);
             this.label1.TabIndex = 1;
@@ -86,9 +83,9 @@
             "Roxo",
             "Salmão-Doce",
             "Vermelho-Vinho"});
-            this.listCor.Location = new System.Drawing.Point(35, 120);
+            this.listCor.Location = new System.Drawing.Point(34, 120);
             this.listCor.Name = "listCor";
-            this.listCor.Size = new System.Drawing.Size(173, 124);
+            this.listCor.Size = new System.Drawing.Size(174, 124);
             this.listCor.Sorted = true;
             this.listCor.TabIndex = 3;
             this.listCor.SelectedIndexChanged += new System.EventHandler(this.listCor_SelectedIndexChanged);
@@ -104,10 +101,11 @@
             "osaka",
             "quieres",
             "toro2"});
-            this.listImage.Location = new System.Drawing.Point(275, 120);
+            this.listImage.Location = new System.Drawing.Point(274, 120);
             this.listImage.Name = "listImage";
             this.listImage.Size = new System.Drawing.Size(178, 64);
             this.listImage.TabIndex = 5;
+            this.listImage.SelectedIndexChanged += new System.EventHandler(this.listImage_SelectedIndexChanged);
             // 
             // lblImagem
             // 
@@ -119,42 +117,16 @@
             this.lblImagem.TabIndex = 4;
             this.lblImagem.Text = "Alterar a imagem abaixo";
             // 
-            // listBox2
+            // picBox
             // 
-            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 20;
-            this.listBox2.Items.AddRange(new object[] {
-            "Amarelo",
-            "Roxo",
-            "Laranja",
-            "Vermelho-Vinho",
-            "Salmão-Doce"});
-            this.listBox2.Location = new System.Drawing.Point(523, 120);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(173, 64);
-            this.listBox2.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(522, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Alterar a cor de fundo";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = global::simuladorDeMenus.Properties.Resources.everynyan;
-            this.pictureBox1.Location = new System.Drawing.Point(278, 211);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 167);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picBox.Image = global::simuladorDeMenus.Properties.Resources.everynyan;
+            this.picBox.Location = new System.Drawing.Point(279, 211);
+            this.picBox.Name = "picBox";
+            this.picBox.Size = new System.Drawing.Size(170, 167);
+            this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox.TabIndex = 8;
+            this.picBox.TabStop = false;
             // 
             // btnMenu
             // 
@@ -173,9 +145,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnMenu);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.picBox);
             this.Controls.Add(this.listImage);
             this.Controls.Add(this.lblImagem);
             this.Controls.Add(this.listCor);
@@ -184,7 +154,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "Config";
             this.Text = "Configurações";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,10 +168,7 @@
         private System.Windows.Forms.ListBox listCor;
         private System.Windows.Forms.ListBox listImage;
         private System.Windows.Forms.Label lblImagem;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBox;
         private System.Windows.Forms.Button btnMenu;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

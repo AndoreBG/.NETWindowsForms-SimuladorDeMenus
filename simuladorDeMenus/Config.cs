@@ -67,5 +67,29 @@ namespace simuladorDeMenus
                     break;
             }
         }
+
+        private void listImage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int imagem = listImage.SelectedIndex;
+
+            switch (imagem)
+            {
+                case 0:
+                    picBox.Image = Properties.Resources.everynyan;
+                    break;
+                case 1:
+                    picBox.Image = Properties.Resources.giornokujo;
+                    break;
+                case 2:
+                    picBox.Image = Properties.Resources.osaka;
+                    break;
+                case 3:
+                    picBox.Image = Properties.Resources.quieres;
+                    break;
+                case 4:
+                    picBox.Image = Properties.Resources.toro2;
+                    break;
+            }
+        }
     }
 }
