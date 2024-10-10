@@ -99,10 +99,5 @@ namespace simuladorDeMenus
 
             this.Close();
         }
-
-        private void btnAtua_Click(object sender, EventArgs e)
-        {
-            CarregarDadosNoGrid();
-        }
     }
 }

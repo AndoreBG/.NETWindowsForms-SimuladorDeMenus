@@ -31,7 +31,6 @@
             this.dgvRelatorio = new System.Windows.Forms.DataGridView();
             this.btnRetornar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnAtua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,23 +64,11 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // btnAtua
-            // 
-            this.btnAtua.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtua.Location = new System.Drawing.Point(12, 276);
-            this.btnAtua.Name = "btnAtua";
-            this.btnAtua.Size = new System.Drawing.Size(200, 50);
-            this.btnAtua.TabIndex = 3;
-            this.btnAtua.Text = "Atualizar";
-            this.btnAtua.UseVisualStyleBackColor = true;
-            this.btnAtua.Click += new System.EventHandler(this.btnAtua_Click);
-            // 
             // Relatorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAtua);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.dgvRelatorio);
@@ -97,6 +84,5 @@
         private System.Windows.Forms.DataGridView dgvRelatorio;
         private System.Windows.Forms.Button btnRetornar;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnAtua;
     }
 }

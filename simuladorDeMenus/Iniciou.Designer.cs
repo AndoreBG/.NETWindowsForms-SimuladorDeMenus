@@ -32,6 +32,7 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnAcao = new System.Windows.Forms.Button();
             this.btnRelatorio = new System.Windows.Forms.Button();
+            this.lblHora = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -78,6 +79,16 @@
             this.btnRelatorio.UseVisualStyleBackColor = true;
             this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(563, 410);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(225, 31);
+            this.lblHora.TabIndex = 4;
+            this.lblHora.Text = "01/01/0001 01:01";
+            // 
             // Iniciou
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -85,6 +96,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblHora);
             this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.btnAcao);
             this.Controls.Add(this.btnMenu);
@@ -102,5 +114,6 @@
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnAcao;
         private System.Windows.Forms.Button btnRelatorio;
+        private System.Windows.Forms.Label lblHora;
     }
 }

@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Timers;
 using static simuladorDeMenus.Form1;
 
 namespace simuladorDeMenus
@@ -17,13 +18,24 @@ namespace simuladorDeMenus
     public partial class Iniciou : Form
     {
         private string nome = variavelGlobal.nome;
+        static System.Windows.Forms.Timer Segundos = new System.Windows.Forms.Timer();
 
         public Iniciou()
         {
             InitializeComponent();
+            IniTimer();
 
             lblTitulo.Text += nome;
         }
+
+        private void IniTimer()
+        {
+            Segundos.Interval = 1000;
+            Segundos.Enabled = true; 
+            Segundos.Tick += new EventHandler(Segundos_Tick);
+        }
+
+        private void Segundos_Tick(object sender, EventArgs e) => lblHora.Text = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
